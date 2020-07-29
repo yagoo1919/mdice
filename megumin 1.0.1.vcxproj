@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>app</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Trpg\QT\megumin 1.0.1\QT;E:\Trpg\QT\megumin 1.0.1\Dice;E:\Trpg\QT\megumin 1.0.1\CQSDK;E:\Trpg\QT\megumin 1.0.1\CQSDKCPP;.\GeneratedFiles;.;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\qtmaind.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Cored.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Guid.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Widgetsd.lib;E:\Trpg\QT\megumin 1.0.1\sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>E:\跑团用\QT\megumin 1.0.1\QT;E:\跑团用\QT\megumin 1.0.1\Dice;E:\跑团用\QT\megumin 1.0.1\CQSDK;E:\跑团用\QT\megumin 1.0.1\CQSDKCPP;.\GeneratedFiles;.;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets</IncludePath>
+      <Define>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+      <QTDIR>D:\Qt\Qt5.13.0\5.13.0\msvc2017</QTDIR>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+      <QTDIR>D:\Qt\Qt5.13.0\5.13.0\msvc2017</QTDIR>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Trpg\QT\megumin1.0.1\DiceNew;D:\libiconv-1.11.1\include;D:\Boost\boost_1_67_0;E:\Trpg\QT\megumin1.0.1\QT;E:\Trpg\QT\megumin1.0.1\Dice;.\GeneratedFiles;.;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>D:\libiconv-1.11.1\lib;D:\Boost\boost_1_67_0\lib32-msvc-14.0;E:\Trpg\QT\megumin1.0.1;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\qtmain.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Core.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Gui.lib;D:\Qt\Qt5.13.0\5.13.0\msvc2017\lib\Qt5Widgets.lib;E:\Trpg\QT\megumin1.0.1\sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>.\GeneratedFiles;.;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include;.\GeneratedFiles\$(ConfigurationName);D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtCore;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtGui;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtANGLE;D:\Qt\Qt5.13.0\5.13.0\msvc2017\include\QtWidgets</IncludePath>
+      <Define>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+      <QTDIR>D:\Qt\Qt5.13.0\5.13.0\msvc2017</QTDIR>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+      <QTDIR>D:\Qt\Qt5.13.0\5.13.0\msvc2017</QTDIR>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <QtUic Include="myreply.ui" />
+    <QtUic Include="QT\megumin101.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\惠惠\阿库娅\dev\me.cqp.megumin.Mdice\app.json" />
+    <None Include="Dice\CustomMsg.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Dice\CQP.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DiceNew\app.h" />
+    <ClInclude Include="DiceNew\common.h" />
+    <ClInclude Include="DiceNew\CQAPI.h" />
+    <ClInclude Include="DiceNew\CQAPI_EX.h" />
+    <ClInclude Include="DiceNew\cqdefine.h" />
+    <ClInclude Include="DiceNew\cqsdk.h" />
+    <ClInclude Include="DiceNew\CQTools.h" />
+    <ClInclude Include="DiceNew\def.h" />
+    <ClInclude Include="DiceNew\dir.h" />
+    <ClInclude Include="DiceNew\enums.h" />
+    <ClInclude Include="DiceNew\exception.h" />
+    <ClInclude Include="DiceNew\logging.h" />
+    <ClInclude Include="DiceNew\menu.h" />
+    <ClInclude Include="DiceNew\message.h" />
+    <ClInclude Include="DiceNew\target.h" />
+    <ClInclude Include="DiceNew\types.h" />
+    <ClInclude Include="DiceNew\Unpack.h" />
+    <ClInclude Include="DiceNew\utils\base64.h" />
+    <ClInclude Include="DiceNew\utils\binpack.h" />
+    <ClInclude Include="DiceNew\utils\function.h" />
+    <ClInclude Include="DiceNew\utils\memory.h" />
+    <ClInclude Include="DiceNew\utils\string.h" />
+    <ClInclude Include="Dice\boxgenerate.h" />
+    <ClInclude Include="Dice\CardDeck.h" />
+    <ClInclude Include="Dice\CustomMsg.h" />
+    <ClInclude Include="Dice\DataBase.h" />
+    <ClInclude Include="Dice\DiceMsg.h" />
+    <ClInclude Include="Dice\DiceMsgSend.h" />
+    <ClInclude Include="Dice\DiceMsgType.h" />
+    <ClInclude Include="Dice\DiceNetwork.h" />
+    <ClInclude Include="Dice\EncodingConvert.h" />
+    <ClInclude Include="Dice\EventHandler.h" />
+    <ClInclude Include="Dice\GetRule.h" />
+    <ClInclude Include="Dice\GlobalVar.h" />
+    <ClInclude Include="Dice\InitList.h" />
+    <ClInclude Include="Dice\json.hpp" />
+    <ClInclude Include="Dice\LogStorage.h" />
+    <ClInclude Include="Dice\makedocx.h" />
+    <ClInclude Include="Dice\MsgFormat.h" />
+    <ClInclude Include="Dice\NameGenerator.h" />
+    <ClInclude Include="Dice\NameStorage.h" />
+    <ClInclude Include="Dice\Qtimer.h" />
+    <ClInclude Include="Dice\RandomGenerator.h" />
+    <ClInclude Include="Dice\RandomReply.h" />
+    <ClInclude Include="Dice\RD.h" />
+    <ClInclude Include="Dice\RDConstant.h" />
+    <ClInclude Include="Dice\Smtp.h" />
+    <ClInclude Include="Dice\sqlite3.h" />
+    <ClInclude Include="Dice\StorageBase.h" />
+    <ClInclude Include="GeneratedFiles\ui_megumin101.h" />
+    <ClInclude Include="GeneratedFiles\ui_myreply.h" />
+    <ClInclude Include="myreply.h" />
+    <ClInclude Include="stringtool.h" />
+    <QtMoc Include="Dice\QtGuiApplication1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="binpack.cpp" />
+    <ClCompile Include="calculater.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="DiceNew\app.cpp" />
+    <ClCompile Include="DiceNew\CQAPI.cpp" />
+    <ClCompile Include="DiceNew\CQAPI_EX.cpp" />
+    <ClCompile Include="DiceNew\CQTools.cpp" />
+    <ClCompile Include="DiceNew\dir.cpp" />
+    <ClCompile Include="DiceNew\dllmain.cpp" />
+    <ClCompile Include="DiceNew\message.cpp" />
+    <ClCompile Include="DiceNew\Unpack.cpp" />
+    <ClCompile Include="DiceNew\utils\base64.cpp" />
+    <ClCompile Include="DiceNew\utils\string.cpp" />
+    <ClCompile Include="Dice\CardDeck.cpp" />
+    <ClCompile Include="Dice\CustomMsg.cpp" />
+    <ClCompile Include="Dice\Dice.cpp" />
+    <ClCompile Include="Dice\DiceMsg.cpp" />
+    <ClCompile Include="Dice\DiceMsgSend.cpp" />
+    <ClCompile Include="Dice\DiceNetwork.cpp" />
+    <ClCompile Include="Dice\dllmain.cpp" />
+    <ClCompile Include="Dice\EncodingConvert.cpp" />
+    <ClCompile Include="Dice\EventHandler.cpp" />
+    <ClCompile Include="Dice\GetRule.cpp" />
+    <ClCompile Include="Dice\GlobalVar.cpp" />
+    <ClCompile Include="Dice\InitList.cpp" />
+    <ClCompile Include="Dice\LogStorage.cpp" />
+    <ClCompile Include="Dice\MsgFormat.cpp" />
+    <ClCompile Include="Dice\NameGenerator.cpp" />
+    <ClCompile Include="Dice\NameStorage.cpp" />
+    <ClCompile Include="Dice\QtGuiApplication1.cpp" />
+    <ClCompile Include="Dice\RandomGenerator.cpp" />
+    <ClCompile Include="Dice\RandomReply.cpp" />
+    <ClCompile Include="Dice\RD.cpp" />
+    <ClCompile Include="Dice\Smtp.cpp" />
+    <ClCompile Include="Dice\StorageBase.cpp" />
+    <ClCompile Include="stringtool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="megumin101.qrc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

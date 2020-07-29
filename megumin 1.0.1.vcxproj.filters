@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generate Files">
+      <UniqueIdentifier>{add45cee-dd75-4093-9a0c-707ad73cac3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CQ">
+      <UniqueIdentifier>{fc18e432-a226-4b50-8c14-63eb7c0abb8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MsgHandler">
+      <UniqueIdentifier>{bfe8d1c9-fa28-4be6-875f-3201cbd9b3a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\new">
+      <UniqueIdentifier>{efe5a157-6dda-4dce-8c40-aafcf23ec034}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="QT\megumin101.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="myreply.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dice\CustomMsg.json">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\惠惠\阿库娅\dev\me.cqp.megumin.Mdice\app.json">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Dice\CQP.lib">
+      <Filter>Source Files</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dice\json.hpp">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\boxgenerate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\CardDeck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\CustomMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\DataBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\DiceMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\DiceMsgSend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\DiceMsgType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\DiceNetwork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\EncodingConvert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\EventHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\GetRule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\GlobalVar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\InitList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\LogStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\makedocx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\MsgFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\NameGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\NameStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\Qtimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\RandomGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\RandomReply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\RDConstant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\RD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\Smtp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\StorageBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_megumin101.h">
+      <Filter>Generate Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice\sqlite3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\app.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\common.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\cqsdk.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\def.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\dir.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\enums.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\exception.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\logging.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\menu.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\message.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\target.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\types.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\utils\base64.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\utils\binpack.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\utils\function.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\utils\memory.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\utils\string.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\CQTools.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\CQAPI.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\CQAPI_EX.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\Unpack.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceNew\cqdefine.h">
+      <Filter>Header Files\new</Filter>
+    </ClInclude>
+    <ClInclude Include="stringtool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_myreply.h">
+      <Filter>Generate Files</Filter>
+    </ClInclude>
+    <ClInclude Include="myreply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dice\CardDeck.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\CustomMsg.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\Dice.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\DiceMsg.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\DiceMsgSend.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\DiceNetwork.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\dllmain.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\EncodingConvert.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\EventHandler.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\GetRule.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\GlobalVar.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\InitList.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\LogStorage.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\MsgFormat.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\NameGenerator.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\NameStorage.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\QtGuiApplication1.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\RandomGenerator.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\RandomReply.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\RD.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\Smtp.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice\StorageBase.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceNew\app.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceNew\dir.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceNew\dllmain.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceNew\message.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceNew\utils\string.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceNew\CQTools.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceNew\utils\base64.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="binpack.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceNew\CQAPI.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceNew\CQAPI_EX.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceNew\Unpack.cpp">
+      <Filter>Header Files\new</Filter>
+    </ClCompile>
+    <ClCompile Include="stringtool.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="calculater.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Dice\QtGuiApplication1.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="megumin101.qrc">
+      <Filter>Source Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+</Project>

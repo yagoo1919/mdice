@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Myreply</class>
+ <widget class="QMainWindow" name="Myreply">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>825</width>
+    <height>795</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>825</width>
+    <height>612</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>825</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>自定义回复设置</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>821</width>
+      <height>841</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="tabPosition">
+        <enum>QTabWidget::North</enum>
+       </property>
+       <property name="currentIndex">
+        <number>2</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>自定义回复设置</string>
+        </attribute>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>320</y>
+           <width>151</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>自定义回复列表一览</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>290</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>插入新条目</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>40</y>
+           <width>471</width>
+           <height>181</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>400</y>
+           <width>801</width>
+           <height>301</height>
+          </rect>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>111</number>
+         </attribute>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>37</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>回复语句</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>触发语句</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>触发类型</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>限制群</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>触发时间间隔</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>每日限制</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>匹配类型</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>72</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>触发语句</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>20</y>
+           <width>72</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>回复语句</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>230</y>
+           <width>141</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>仅群聊/讨论组</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>仅私聊</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>群聊/讨论组及私聊</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QSpinBox" name="spinBox">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>230</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>230</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>时间间隔</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>260</y>
+           <width>72</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>每日限制</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="spinBox_2">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>260</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>-10</y>
+           <width>161</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>限制</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>40</y>
+           <width>161</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="placeholderText">
+          <string>    填写限制语句</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>260</y>
+           <width>141</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <item>
+          <property name="text">
+           <string>完全匹配</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>模糊匹配</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>正则匹配</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>141</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>290</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>删除</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>330</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>自定义回复开关</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>230</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>时</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="spinBox_3">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>230</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>390</x>
+           <y>230</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>分</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="spinBox_4">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>230</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>230</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>秒</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>260</y>
+           <width>21</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>次</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_2">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>320</y>
+           <width>241</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>不满足时间间隔时回复</string>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_3">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>280</y>
+           <width>241</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>不满足次数限制时回复</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>510</x>
+           <y>230</y>
+           <width>301</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;勾选左框时，若触发语句内容不为空，&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;会在自设内存数据中自动生成&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; text-decoration: underline;&quot;&gt;&amp;quot;[触发语句]numberconf&amp;quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;等条目，你也可以手动在自设内存中添&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;加该类条目，效果相同&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>370</y>
+           <width>211</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_6">
+         <property name="geometry">
+          <rect>
+           <x>490</x>
+           <y>370</y>
+           <width>221</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_26">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>370</y>
+           <width>131</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>搜索自响应语句</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_27">
+         <property name="geometry">
+          <rect>
+           <x>390</x>
+           <y>370</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>搜索自回复</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="geometry">
+          <rect>
+           <x>242</x>
+           <y>10</y>
+           <width>391</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>染色</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>自触发事件</string>
+        </attribute>
+        <widget class="QComboBox" name="comboBox_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>110</y>
+           <width>331</width>
+           <height>31</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_15">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>80</y>
+           <width>72</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>事件名称：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_16">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>150</y>
+           <width>72</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>处理方式：</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>400</y>
+           <width>331</width>
+           <height>31</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>440</y>
+           <width>751</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>插入新事件</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="geometry">
+          <rect>
+           <x>390</x>
+           <y>110</y>
+           <width>391</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>删除事件</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_17">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>370</y>
+           <width>72</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>事件名称：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_18">
+         <property name="geometry">
+          <rect>
+           <x>390</x>
+           <y>370</y>
+           <width>72</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Delay：</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="spinBox_5">
+         <property name="geometry">
+          <rect>
+           <x>390</x>
+           <y>400</y>
+           <width>391</width>
+           <height>31</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_21">
+         <property name="geometry">
+          <rect>
+           <x>530</x>
+           <y>330</y>
+           <width>141</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Delay:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_22">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>10</y>
+           <width>771</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>提醒：自触发事件占用部分内存，请勿在此大量添加事件</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_8">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>170</y>
+           <width>651</width>
+           <height>191</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_9">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>470</y>
+           <width>751</width>
+           <height>241</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QDateTimeEdit" name="dateTimeEdit">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>50</y>
+           <width>194</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>40</y>
+           <width>161</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_14">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>40</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>时间戳转换工具</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_23">
+         <property name="geometry">
+          <rect>
+           <x>371</x>
+           <y>50</y>
+           <width>221</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>----&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_5">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>70</y>
+           <width>161</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_24">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>40</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>时间戳</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>70</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>日时间戳</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="geometry">
+          <rect>
+           <x>700</x>
+           <y>170</y>
+           <width>81</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>保存</string>
+         </property>
+        </widget>
+        <zorder>textEdit_8</zorder>
+        <zorder>comboBox_3</zorder>
+        <zorder>label_15</zorder>
+        <zorder>label_16</zorder>
+        <zorder>lineEdit_2</zorder>
+        <zorder>pushButton_6</zorder>
+        <zorder>pushButton_7</zorder>
+        <zorder>label_17</zorder>
+        <zorder>label_18</zorder>
+        <zorder>spinBox_5</zorder>
+        <zorder>label_21</zorder>
+        <zorder>label_22</zorder>
+        <zorder>textEdit_9</zorder>
+        <zorder>dateTimeEdit</zorder>
+        <zorder>lineEdit_4</zorder>
+        <zorder>label_14</zorder>
+        <zorder>label_23</zorder>
+        <zorder>lineEdit_5</zorder>
+        <zorder>label_24</zorder>
+        <zorder>label_25</zorder>
+        <zorder>pushButton_8</zorder>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>自设数据库</string>
+        </attribute>
+        <widget class="QTableWidget" name="tableWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>260</y>
+           <width>791</width>
+           <height>541</height>
+          </rect>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>387</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>响应条目</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>内容条目</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>10</y>
+           <width>181</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>删除选中条目</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_4">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>10</y>
+           <width>191</width>
+           <height>241</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_5">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>10</y>
+           <width>241</width>
+           <height>241</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>70</y>
+           <width>181</width>
+           <height>131</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>应用或新增条目</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>71</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>响应条目</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>20</y>
+           <width>72</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>内容条目</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>210</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>从selfsetting.txt读取</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_7">
+        <attribute name="title">
+         <string>自设内存数据</string>
+        </attribute>
+        <widget class="QTableWidget" name="tableWidget_5">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>370</y>
+           <width>791</width>
+           <height>341</height>
+          </rect>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>387</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>响应条目</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>内容条目</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_12">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>181</width>
+           <height>241</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="geometry">
+          <rect>
+           <x>670</x>
+           <y>250</y>
+           <width>131</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>应用或新增条目</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_19">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>71</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>响应条目</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_13">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>80</y>
+           <width>421</width>
+           <height>241</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_20">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>50</y>
+           <width>72</width>
+           <height>15</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>内容条目</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_13">
+         <property name="geometry">
+          <rect>
+           <x>670</x>
+           <y>80</y>
+           <width>131</width>
+           <height>161</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>删除选中条目</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_6">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>330</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="placeholderText">
+          <string>按关键字搜索</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_7">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>330</y>
+           <width>421</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="placeholderText">
+          <string>按关键字搜索</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_4">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>781</width>
+           <height>31</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>规则简述</string>
+        </attribute>
+        <widget class="QTextEdit" name="textEdit_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>20</y>
+           <width>741</width>
+           <height>701</height>
+          </rect>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;如需对应单个触发语句回应不同内容，只需将内容用||分开即可，你也可以在不同内容中添加额外的要求来满足自定义的效果。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;操作指令分三种，分别为替换指令，限制指令和动作指令 &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;指令中所有蓝字部分参数直接替换！方括号无需保留&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#55007f;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#b10000;&quot;&gt;0.转义&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;检测时会根据从左向右，从内向外的原则匹配，当文本中含有尖括号，英文冒号时可能会影响到指令本身的匹配&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;因此此处应用以下转义内容&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;由&amp;lt;name&amp;gt;,&amp;lt;match&amp;gt;等外部文本进行保护形式引用时，&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;所有&amp;quot;&amp;lt;&amp;quot;/&amp;quot;&amp;gt;&amp;quot;都会被替换成&amp;quot;/&amp;amp;a&amp;quot;和&amp;quot;/&amp;amp;b&amp;quot;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;所有&amp;quot;{&amp;quot;/&amp;quot;}&amp;quot;都会被替换成&amp;quot;/&amp;amp;c&amp;quot;和&amp;quot;/&amp;amp;d&amp;quot;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;解析全部完成后，转义项会以相反格式替换回原本内容&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#b10000;&quot;&gt;1.限制指令限制了单条内不同回复的触发几率/是否触发&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;rate:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;：此条目被触发的几率，请注意不要让此数据大于500，也不建议设置总数之合过大的单条回复（未设置概率的字段默认触发概率为5）&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;auth:master/admin&amp;gt;：对应权限触发的条目，只有master/管理员可以触发，此处的master为登记的masterQQ号而非名单等级&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;type:group/private&amp;gt;：对单条再做群聊/讨论组和私聊的限制&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;qq:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;：指定此条目只有某QQ号可以触发，可以使用','分割多个QQ&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;anti-qq:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;：设置此条目使得除某QQ号以外均可触发，可以使用','分割多个QQ&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;group:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;：指定此条目只有某群可以触发，可以使用','分割多个群&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;anti-group:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;：设置此条目使得除某群以外均可触发，可以使用','分割多个群&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;anti-auth:master/admin&amp;gt;：设置此条目使得除master/管理员以外的人都可以触发。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;remove:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;当数字内容为1时，remove会使得该条目不可触发，用于逻辑运算&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#b10000;&quot;&gt;2.替换指令将它自身替换成运算/存取/匹配之后所得结果&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;roll:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[掷骰指令]&lt;/span&gt;&amp;gt;：掷骰指令标准如D20,D100&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;random:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;/&amp;lt;randomdouble:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;:产生给定区间内的随机数，前后分别生成整数和小数&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;equal:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;.....&lt;/span&gt;&amp;gt;:&amp;quot;.....&amp;quot;代表可以设置无限多的对比项，当全部相等时返回1，否则返回0&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;more:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;.....&lt;/span&gt;&amp;gt;:&amp;quot;.....&amp;quot;代表可以设置无限多的对比项，所有项全部与第一项相比较，全部小于第一项则返回1，否则返回0&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;less:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;.....&lt;/span&gt;&amp;gt;:&amp;quot;.....&amp;quot;代表可以设置无限多的对比项，所有项全部与第一项相比较，全部大于第一项则返回1，否则返回0&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;range:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容1]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容2]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容3]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容4]&lt;/span&gt;&amp;gt;:内容1为需要比较的数字，内容2为范围下限，内容3为范围上限，参数4可以忽略，当其为0时不包括边界，为1时包含边界，为3时左开右闭，为4时左闭右开&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;read:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;&amp;gt;:根据内容从自设数据库读取返回文本，注意返回文本中的指令也会被替换到当前条目运算，你可以将一些多次调用的运算内容存入到自设数据库中使用，以简化空间和运算。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;qread:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;&lt;span style=&quot; color:#55007f;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;[额外参数1]&lt;/span&gt;&amp;gt;根据内容从内存读取返回文本，返回文本中的指令同样会被替换到当前条目运算，qread直接读取，因此比起read速度更快，但是不建议在内存储存大量数据,额外参数为所取数据来源的表类型，若无则默认为quickmap&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;add:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;.....&lt;/span&gt;&amp;gt;：将数项简单相加，注意此处没有错误检测，输入并非数字的情况下会报错&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;addd:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;.....&lt;/span&gt;&amp;gt;：将数项简单相加,与上一向的区别是，此处允许小数，注意此处没有错误检测，输入并非数字的情况下会报错&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;match:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;:从0开始，允许你取用正则匹配的匹配项，注意0会反馈匹配到的所有内容，正则使用match时，返回的文本以[pt]形式出现，不会进一步检索变量请注意&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;if:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;&amp;gt;：仅在第一项为1的时候，if会将自己替换成第二项的内容&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;info:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;&amp;gt;可用变量，内容为qq时为当前触发qq,内容为group时为触发群,另外支持name,表示当前使用者设置的姓名，当表示姓名时，内容以[pt]形式被保护&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;randomhis:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;&amp;gt;:从0开始，允许你取用当前分条目中产生的随机数&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;anti:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;&amp;gt;:将内容中的布尔值取反&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;sort:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]##[内容]##.....&lt;/span&gt;&amp;gt;:随机选择内容的一种，当你从自设内存中存取数据，不再检测“||”分割的文本时，可以用sort随机取，为了支持进一步的嵌套，sort语句的内容用##分割&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;time:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;:从1开始，1-8的数字将对应返回当前的：时间戳，整体时间段，年，月，日，时，分，秒。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&amp;lt;skill:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[QQ],[技能名称]&lt;/span&gt;&amp;gt;:读取某QQ当前使用人物卡下某技能的数值。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#b10000;&quot;&gt;3.操作指令只进行操作，并且将自己完全销毁不会被替换，操作指令使用{}作为标识符，并且互相之间不可嵌套【禁言和踢出指令只因自由度提供，不建议骰娘具备自动触发的此功能，因此引起的任何后果由自身承担】&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{kick:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;}：在触发该条目的群中踢出某个群成员&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{ban:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;}：禁言触发该条目的某个群中的成员指定时间&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{leave:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;&amp;gt;：退出某个群，自身为群主时不会解散&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{write:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;}：写入数据到自设数据库，写入速度较慢，如果在之后迅速读取可能发生错误，可以用于储存长久使用的指令格式或者大量文本内容&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{qwrite:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;&lt;span style=&quot; color:#55007f;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;[额外参数1]&lt;/span&gt;&lt;span style=&quot; color:#55007f;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;[额外参数2]&lt;/span&gt;}：写入数据到内存，写入较快，写入内存的部分会在重启骰娘时储存于本地，可以用于储存经常变动的数据,额外参数1可省略，若不省略则会将你填写的内容作为数字处理，在原本数据上加上，减去你填写的数值,额外参数2为所存数据的表类型，若无则默认为quickmap&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{clear:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;&lt;span style=&quot; color:#55007f;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;[额外参数1]&lt;/span&gt;&amp;gt;根据清空某条内存数据，可以适用于定时清空,额外参数为所取数据来源的表类型，若无则默认为quickmap&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{writeskill:&lt;span style=&quot; font-weight:600;&quot;&gt;[QQ]&lt;/span&gt;,&lt;span style=&quot; font-weight:600;&quot;&gt;[技能名称]&lt;/span&gt;,&lt;span style=&quot; font-weight:600;&quot;&gt;[数值]&lt;/span&gt;,&lt;span style=&quot; font-weight:600;&quot;&gt;[额外参数]&lt;/span&gt;}往某QQ号用户的某个技能中写入你设置的技能数值，额外参数可以省略或者填入&amp;quot;+&amp;quot;&amp;quot;-&amp;quot;，具备额外参数时视情况会在原本的技能中加上/减去你设置的数值&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{sendqq:&lt;span style=&quot; font-weight:600;&quot;&gt;[QQ]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;}:单独发送一条讯息(私聊）&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{sendgroup:&lt;span style=&quot; font-weight:600;&quot;&gt;[群]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;}:单独发送一条讯息（群聊）&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{throw:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[内容]&lt;/span&gt;}:掷出特定名称的事件，不会带有对应的讯息，因此尝试调用事件相关讯息会报错/无效请注意。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{aurh:&lt;span style=&quot; font-weight:600;&quot;&gt;[QQ]&lt;/span&gt;,&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[权限等级]&lt;/span&gt;}:触发时给予特定QQ预设的权限等级，包括代理master等级0也可用，并且此条目会强制覆盖请注意。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#b10000;&quot;&gt;4.除以上操作之外，你可以在限制条目中使用这些内容，限制条目中如果在计算最终产生的数值为空或0，那么整条自定义回复将不会触发&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600; color:#b10000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#b10000;&quot;&gt;5.你可以通过在限制条目中使用以下语句来对全局设置冷却或时间限制&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{setglotime:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;}：数字为1时将会触发，刷新全局冷却时间，全局冷却长度与你设置的间隔相等。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{setglonumber:&lt;span style=&quot; font-weight:600; color:#55007f;&quot;&gt;[数字]&lt;/span&gt;}：}数字为1时将会触发，增加全局使用次数1，全局使用次数上限与你设置的相等。&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#b10000;&quot;&gt;6.以下为自定义事件处理的讲解和预设事件，自定义事件处理为，当某一事件被抛出时，会自动接收并且在延迟一定时间后执行处理语句的机制，事件种类在下表列出，另外，你还可以使用{throw}自定义事件，&amp;lt;info&amp;gt;语句在事件处理语法中是不可用的，并且可能引起错误，&amp;lt;match&amp;gt;在部分有预设说明的事件中可以用于取出相关数据。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;enable:启用事件，无任何预设数据&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;day_time[当前日时间戳]：日时间戳，每秒抛出1-2次，可以用于作为多次的定时时间&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;time:当前时间戳，每秒抛出1-2次，可以用做一次性的闹钟事件&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;addgroup:邀请加群事件，参数0：加群群号，参数1：邀请人&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;dismiss:指令退群事件，参数0：群号，参数1：指令发送人&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;jrrp:jrrp事件，参数0：群号，参数1：指令发送人&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;log_on:开启log记录事件，参数0:群号，参数1：指令发送人，参数2：log名称&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;log_on:关闭log记录事件，参数0:群号，参数1：指令发送人&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;更多种类的附加条目等待反馈更新中......&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>825</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
