@@ -1,0 +1,153 @@
+{
+  "ret": 1,
+  "apiver": 9,
+  "name": "me.cqp.megumin.Mdice",
+  "version": "0.3.1",
+  "version_id": 524,
+  "author": "megumin",
+  "description": "基于溯洄的dice版本进一步开发的版本",
+  "event": [
+    {
+      "id": 1,
+      "type": 21,
+      "name": "私聊消息处理",
+      "function": "eventPrivateMsg",
+      "priority": 30000
+    },
+    {
+      "id": 2,
+      "type": 2,
+      "name": "群消息处理",
+      "function": "eventGroupMsg",
+      "priority": 30000
+    },
+    {
+      "id": 3,
+      "type": 4,
+      "name": "多人聊天消息处理",
+      "function": "eventDiscussMsg",
+      "priority": 30000
+    },
+    {
+      "id": 4,
+      "type": 1003,
+      "name": "启用事件",
+      "function": "cq_app_enable",
+      "priority": 30000
+    },
+    {
+      "id": 5,
+      "type": 1002,
+      "name": "退出事件",
+      "function": "eventExit",
+      "priority": 30000
+    },
+    {
+      "id": 6,
+      "type": 1004,
+      "name": "禁用事件",
+      "function": "cq_app_disable",
+      "priority": 30000
+    },
+    {
+      "id": 7,
+      "type": 103,
+      "name": "群成员添加事件",
+      "function": "eventGroupMemberIncrease",
+      "priority": 30000
+    },
+    {
+
+      "id": 8,
+      "type": 301,
+      "name": "好友添加请求处理",
+      "function": "eventRequest_AddFriend",
+      "priority": 30000
+    },
+    {
+      "id": 9,
+      "type": 302,
+      "name": "群添加请求处理",
+      "function": "eventGroupInvited",
+      "priority": 30000
+    },
+    {
+      "id": 10,
+      "type": 160,
+      "name": "取群成员列表",
+      "function": "getGroupMemberList",
+      "priority": 30000
+    },
+    {
+      "id": 11,
+      "type": 161,
+      "name": "取群列表",
+      "function": "getGroupList",
+      "priority": 30000
+    },
+    {
+      "id": 12,
+      "type": 121,
+      "name": "置群成员禁言",
+      "function": "setGroupBan",
+      "priority": 30000
+    },
+    {
+      "id": 13,
+      "type": 127,
+      "name": "置群退出",
+      "function": "setGroupLeave",
+      "priority": 30000
+    },
+    {
+      "id": 14,
+      "type": 128,
+      "name": "置群成员专属头衔",
+      "function": "setGroupSpecialTitle",
+      "priority": 30000
+    },
+    {
+      "id": 15,
+      "type": 102,
+      "name": "群成员减少事件处理",
+      "function": "eventGroupMemberDecrease",
+      "priority": 30000
+    },
+    {
+      "id": 16,
+      "type": 140,
+      "name": "置讨论组退出",
+      "function": "setDiscussLeave",
+      "priority": 30000
+    },
+    {
+      "id": 17,
+      "type": 122,
+      "name": "置群管理员",
+      "function": "setGroupAdmin",
+      "priority": 30000
+    }
+  ],
+  "menu": [
+    {
+      "name": "设置菜单",
+      "function": "eventMenu"
+    }
+  ],
+  "auth": [
+    20, //取好友列表	getFriendList
+    101, //发送群消息			sendGroupMsg
+    103, //发送讨论组消息		sendDiscussMsg
+    106, //发送私聊消息		sendPrivateMsg
+    121, //置群成员禁言  setGroupBan
+    122, //置群管理员			setGroupAdmin
+    127, //[敏感]置群退出	setGroupLeave
+    130, //取群成员信息		getGroupMemberInfoV2 / getGroupMemberInfo
+    131, //取陌生人信息		getStrangerInfo
+    140, //置讨论组退出		setDiscussLeave
+    150, //置好友添加请求		setFriendAddRequest
+    151, //置群添加请求		setGroupAddRequest
+    160, //取群成员列表	getGroupMemberList
+    161 //取群列表		getGroupList
+  ]
+}
